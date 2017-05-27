@@ -7,28 +7,28 @@ Install docker [(for mac)](https://docs.docker.com/docker-for-mac/install/). And
 
 Create a special docker data dir to store persistant data from docker containers (in the Terminal):
 
-    mkdir -p ~\doc\docker
+    mkdir -p ~/doc/docker
 
 same for wordpress
 
-    mkdir -p ~\doc\docker\wordpress
+    mkdir -p ~/doc/docker/wordpress
 
 Copy the 5 WordPress shell scripts to a folder. All 5 files must be in the same folder. I assume you put the script in the users bin folder:
 
-    ~\bin\ 
+    ~/bin/ 
 
 Make the scripts executable:
 
-    chmod +x ~\bin\WordPressCreate.sh
-    chmod +x ~\bin\WordPressClean.sh
-    chmod +x ~\bin\WordPressStart.sh
-    chmod +x ~\bin\WordPressStop.sh
+    chmod +x ~/bin/WordPressCreate.sh
+    chmod +x ~/bin/WordPressClean.sh
+    chmod +x ~/bin/WordPressStart.sh
+    chmod +x ~/bin/WordPressStop.sh
 
 Fill out the directories choosen to use in the `WordPressAllInclude.sh` file and save the file. The instruction in the file should be clear.
 
 Finally you can create the docker containers. This will download the latest images and create containers. Use the `WordPressCreate.sh` script:
 
-    ~\bin\WordPressCreate.sh
+    ~/bin/WordPressCreate.sh
 
 ## Access WordPress
 
@@ -40,14 +40,14 @@ Please remember the user name and password of the admin user you are prompted fo
 
 ## Start and stop
 
-    ~\bin\WordPressStart.sh
-    ~\bin\WordPressStop.sh
+    ~/bin/WordPressStart.sh
+    ~/bin/WordPressStop.sh
 
 ## Cleanup
 
 The cleanup batchfile will remove ALL installed and entered data. But you can choose to clean less. The script contains suggestions for data to keep.
 
-    ~\bin\WordPressClean.sh
+    ~/bin/WordPressClean.sh
 
 # Useful docker commands
 
